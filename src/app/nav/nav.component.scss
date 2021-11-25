@@ -1,0 +1,113 @@
+nav{
+  margin: 0 auto;
+  z-index: 2;
+  display: flex;
+  position: relative;
+  background-color: #fafafa;
+  padding: 12px 22px 12px 22px;
+  justify-content: space-between;
+  & > span{
+    flex-grow: 1;
+  }
+}
+.logo{display: flex;}
+.left_nav{
+  height: 44px;
+  width: auto;
+  position: relative;
+}
+.right_nav{
+  text-align: right;
+  font-weight: 300;
+  line-height: 40px;
+}
+
+.nav_links{
+  padding-left: 12px;
+  opacity: .8;
+  text-rendering: optimizeLegibility;
+  color: black;
+  padding-right: 12px;
+  font-size: 15px;
+  position: relative;
+  text-decoration: none;
+}
+.nav_links:before{
+  content: "";
+  position: absolute;
+  width: 40%;
+  height: 1px;
+  bottom: -3px;
+  left: 30%;
+  background-color: #404040;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+.nav_links:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+#alt_nav{
+  z-index: 1;
+  position: fixed;
+  border-bottom: solid 1px #828282;
+  top: 0px;
+  width: 100%;
+}
+mat-sidenav-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #eee;
+}
+.logo_text{padding-top: 7px; padding-left: 12px;
+  & p{
+    line-height: 17px;
+    letter-spacing: .3px;
+    margin-bottom: 0rem;
+    font-size: 14px;
+    font-weight: 600;
+  }
+}
+#menu_overlay{
+  height: 100vh;
+  position: fixed;
+  top:0px;
+  left:0px;
+  width: 100vw;
+  z-index: 99999;
+  background-color: rgba(255,255,255,0.95);
+  & .right_nav{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 40%;
+    vertical-align: middle;
+    text-align: center;
+    padding:32px;
+  }
+}
+.menu{
+  height: 35px;
+  width: 36px;
+  background: url("../../assets/menu.svg");
+  display: none;
+}
+.close{text-decoration: underline;}
+@media only screen and (max-width: 900px) {
+  .menu{display: block;}
+  .nav_links{font-size: 1.75rem;}
+  nav > .right_nav{
+    display:none;
+  }
+  #menu_overlay > .right_nav{
+    height: 80%;
+    margin-top:10%;
+  }
+}

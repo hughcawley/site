@@ -1,0 +1,43 @@
+<nav>
+  <div class="logo">
+    <img  class="left_nav" src="../../assets/logo.png" (click)="toggleMenu()">
+    <div class="logo_text">
+      <p>Hugh</p>
+      <p>Cawley</p>
+    </div>
+  </div>
+
+
+  <span class="right_nav">
+    <a href="#about" class="nav_links">About Me</a>
+    <a href="#services" class="nav_links">Services</a>
+    <a href="#portfolio" class="nav_links">My Work</a>
+    <a href="#footer" class="nav_links">Get In Touch</a>
+  </span>
+  <div class="menu" (click)="toggleMenu()"></div>
+</nav>
+<nav id="alt_nav">
+  <div class="logo">
+    <img  class="left_nav" src="../../assets/logo.png" >
+    <div class="logo_text">
+      <p>Hugh</p>
+      <p>Cawley</p>
+    </div>
+  </div>
+  <span class="right_nav">
+    <a href="#about" class="nav_links">About Me</a>
+    <a href="#services" class="nav_links">Services</a>
+    <a href="#portfolio" class="nav_links">My Work</a>
+    <a href="#footer" class="nav_links">Get In Touch</a>
+  </span>
+  <div class="menu" (click)="toggleMenu()"></div>
+</nav>
+<section id="menu_overlay" *ngIf="menu">
+  <span (click)="toggleMenu()" class="close">close</span>
+  <span class="right_nav">
+    <a href="#about" class="nav_links">About Me</a>
+    <a href="#services" class="nav_links">Services</a>
+    <a href="#portfolio" class="nav_links">My Work</a>
+    <a href="#footer" class="nav_links">Get In Touch</a>
+  </span>
+</section>

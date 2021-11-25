@@ -1,0 +1,67 @@
+<!--<section id="portfolio" class="row">
+  <h3 class="heading right">Check Out My Work</h3>
+  <div class="portfolio_grid col-10">
+    <div class="portfolio_container row" *ngFor = "let case of cases;">
+      <div class="key_info col-lg-6 col-sm-12">
+        <h2 class="portfolio_title ">{{case.title}}</h2>
+        <div>
+          <p *ngFor = "let skill of case.skills;">{{skill}}</p>
+        </div>
+      </div>
+      <div class="portfolio_visual col-lg-6 col-sm-12">
+        <div class="desktop_img" [style.backgroundImage]="'url(../../assets/'+case.dimg+')'"></div>
+        <div class="mobile_img" *ngIf="case.mimg" [style.backgroundImage]="'url(../../assets/'+case.mimg+')'"></div>
+        <div class="mobile_img"></div>
+      </div>
+      <div class="portfolio_details col-12 row">
+        <div class="col-lg-4 col-sm-12">
+          <h3>Duration</h3>
+          <span>{{case.duration}}</span>
+        </div>
+        <div class="col-lg-8 col-sm-12">
+          <h3 class="">Tools</h3>
+          <span class="portfolio_tools" *ngFor = "let tool of case.tools;">{{tool}}&nbsp;</span>
+        </div>
+      </div>
+      <button mat-button class="portfolio_additional" (click)="toggleDisplay(case.title)" *ngIf="selected != case.title">See More</button>
+      <div class="col-12"><button mat-button class="portfolio_additional" (click)="toggleDisplay(case.title)" *ngIf="selected == case.title">See Less</button></div>
+      <div class="additional_container col-lg-8 col-sm-12" *ngIf="selected == case.title">
+        <p>{{case.desc}}</p>
+        <a href="{{case.anchor}}" *ngIf="case.anchor"><div class="portfolio_link">Visit Website</div></a>
+      </div>
+    </div>
+  </div>
+</section>-->
+
+<section id="lp">
+  <h3 class="heading right" id="portfolio">How I Help My Clients</h3>
+  <div class="lp_grid ">
+    <div class="lp_container row" >
+      <div class="col-lg-3 ml-5 lp_wrapper" *ngFor = "let case of cases;" id="{{case.title}}" (click)="toggleDisplay(case)">
+        <div class="lp_header"></div>
+        <div class="lp_logo" [style.backgroundImage]="'url(../../assets/'+case.img+')'"></div>
+        <div class="lp_text">
+
+        <!--  <div class="lp_expand_btn"  ></div>-->
+
+          <h4>{{case.title}}</h4>
+          <h5>Overview</h5>
+          <span *ngFor = "let skill of case.skills;">{{skill}} | </span>
+          <div class="lp_details">
+              <h5>Duration</h5>
+              <span>{{case.duration}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="lp_expanded" *ngIf="this.expanded!=null">
+    <div class="lp_expanded_close" (click)="toggleDisplay('close')">x</div>
+    <h4>{{testtools}}</h4>
+    <h4>{{expanded.title}}</h4>
+    <p>{{expanded.desc}}</p>
+    <h3 class="">Tools</h3>
+   <span class="portfolio_tools" *ngFor = "let tool of expanded.tools;">{{tool}}&nbsp;</span>
+      <a href="{{expanded.anchor}}" *ngIf="expanded.anchor"><div class="portfolio_link">Visit Website</div></a>
+    </div>
+</section>

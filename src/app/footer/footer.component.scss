@@ -1,0 +1,21 @@
+footer{
+  height: 22px;
+  width: 100%;
+  background-color: #2a2a2a;
+  display: table;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 32px;
+}
+.footer{
+  &_wrapper{
+    padding: 48px;
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+h2{
+  color: white;
+  font-weight: 900;
+  font-family: 'Raleway', sans-serif;
+}

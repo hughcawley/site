@@ -1,0 +1,54 @@
+.review{
+  &_container{
+      text-align: right;
+      border-radius: 6px;
+      padding:22px 48px 22px 48px;
+      margin-top: 48px;
+      quotes: "“";
+  }
+  &_wrapper{
+    display: flex;
+    width:90%;
+    margin: 0 auto;
+  }
+  &_text{
+    text-align: left;
+    font-size: 18px;
+    color: #404040;
+    letter-spacing: 1.2px;
+    &:before{
+      content: '"';
+      display: block;
+      color: #3b929c;
+      line-height: 34px;
+      font-size: 70px;
+      font-family:  serif;
+    }
+  }
+  &_title{
+    font-weight: 500;
+    margin: 0px;
+  }
+  &_company{
+    color: #3b929c;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+    margin: 0px;
+  }
+  &er{
+    font-family: 'Raleway';
+    letter-spacing: .7px;
+    font-weight: 700;
+  }
+}
+span{
+}
+#reviews{
+}
+@media only screen and (max-width: 900px) {
+
+.review_text{font-size:14px;}
+.review_title{
+  font-size:1.1rem;
+}
+}

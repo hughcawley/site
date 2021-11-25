@@ -1,0 +1,13 @@
+<section id="reviews">
+  <h3 class="heading">What My Clients Say About Me</h3>
+  <div class="review_wrapper row">
+    <div class="review_container col-lg-4 col-sm-12 align-bottom" *ngFor = "let review of reviews;">
+      <p class="review_text">
+        {{review.review}}
+      </p>
+      <p class="reviewer">{{review.reviewer}}</p>
+      <h4 class="review_title">{{review.title}},</h4>
+      <span target="_blank" class="review_company">{{review.company}}</span>
+    </div>
+  </div>
+</section>

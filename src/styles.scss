@@ -1,1 +1,90 @@
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@import '~@angular/material/theming';
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$web-primary: mat-palette($mat-indigo);
+$web-accent: mat-palette($mat-pink, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$web-warn: mat-palette($mat-red);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$web-theme: mat-light-theme($web-primary, $web-accent, $web-warn);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($web-theme);
+
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:900|Courier+Prime|Bree+Serif|Raleway:300,500,600,700,800,900&display=swap');
+
+
+h1, h2,h3,h4,h5,p,a{
+  font-family: 'Raleway', sans-serif;
+  color:#423f3f;
+}
+
+h3{font-size: 34px;letter-spacing: 1.5px; font-weight: 700!important;}
+body{
+  margin: 0;
+  background-color: #efefef;
+  color: #404040;
+  width:100vw;
+  overflow-x: hidden;
+}
+.hidden{display:none;}
+.center{text-align: center;}
+.right{text-align: right;}
+
+.wrapper{
+  padding-right: 60px;
+  padding-left: 60px;
+}
+.heading{
+  font-weight: 100;
+  padding-top:32px;
+  padding-bottom:32px;
+  letter-spacing: 2px;
+  font-size: 32px;
+  font-weight: 900;
+}
+section{
+  padding: 80px;
+  position: relative;
+  margin: 0 auto;
+  &:nth-child(odd) .heading {
+  }
+}
+.accent{color:#3b929c;}
+html, body { height: 100%; }
+p{font-size: 15px;
+  font-weight: 300;
+  opacity: .8;
+/*  font-family: 'Courier Prime', monospace;*/
+  line-height: 26px;
+}
+@media only screen and (max-width: 900px) {
+  section{
+    padding:24px;
+  }
+  .service_container{width:100%;}
+  .portfolio_details > div{padding-top:12px;}
+  #large_intro{
+    font-size:2em;
+  }
+
+}
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';

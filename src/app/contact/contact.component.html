@@ -1,0 +1,21 @@
+<form [formGroup]="mailForm" id="footer_form">
+      <div class="form-group">
+        <label for="name" class="col-md-4">Name:</label>
+        <input formControlName="name" placeholder="Your name" type="text" id="name" class="form-control" />
+        <span class="error" *ngIf="mailForm.controls['name'].invalid && submitAttempted">Please Enter Your Name</span>
+      </div>
+      <div class="form-group">
+        <label for="email"  class="col-md-4">E-mail:</label>
+        <input formControlName="email" placeholder="Your e-mail address" type="text" id="email" class="form-control" />
+        <span class="error" *ngIf="mailForm.controls['email'].invalid && submitAttempted">Please Enter Your Email</span>
+      </div>
+      <div class="form-group">
+        <label for="message"  class="col-md-4">Message:</label>
+        <input formControlName="message" placeholder="Your message" type="text" id="message" class="form-control" />
+        <span class="error" *ngIf="mailForm.controls['message'].invalid && submitAttempted">Please Enter Your Query</span>
+      </div>
+      <div class="submit_container">
+        <re-captcha [hidden]="!captchaShow" (resolved)="resolved($event)" siteKey="6Lcvt84UAAAAAK-iEH0oxbrDwu2KU5rkZkpLx4NY"></re-captcha>
+        <button type="submit" class="btn btn-primary" (click)="sendMail()">Submit</button>
+      </div>
+    </form>

@@ -1,0 +1,148 @@
+.service{
+  &_container{
+    width: 90%;
+    margin: 0 auto;
+  }
+  &_wrapper{
+    min-height: 280px;
+    margin: 0 auto;
+    margin-top:24px;
+    cursor: pointer;
+    transition: ease margin 800ms;
+    &:hover .service_img{opacity: 1;}
+    &:hover {margin-top:20px;}
+  }
+  &_info{
+    min-width: 60%;
+    text-align: center;
+  }
+  &_heading{
+    font-weight: 500;
+    font-size: 15px;
+    padding: 6px 0px 24px 0px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  &_tagline{
+    display: none;
+  }
+  &_img{
+    height: 44px;
+    opacity:.7;
+    background-position: center;
+    font-weight: 500;
+    margin: 0 auto;
+    transition: ease opacity 800ms;
+    margin-bottom: 24px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  &_image{
+    background-size: cover!important;
+    background-position: top right;
+    background-repeat: no-repeat;
+    border-top-right-radius: 25px;
+    min-height: 50vh;
+  }
+  &_desc{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-right: 48px;
+  }
+  &_description{
+    font-family: "Raleway";
+    line-height: 24px;
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 1.2px;
+  }
+  &_expanded{
+    padding-top:122px;
+    padding-bottom:42px;
+    justify-content: center;
+    & p{
+      padding-top:24px;
+    }
+    &_alt{
+      & .service_image{
+        border-top-left-radius: 25px;
+        border-top-right-radius: 0px;
+      }
+    }
+  }
+
+}
+
+.brand{
+  padding-top: 72px;
+  justify-content: center;
+  &_title{
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 15px;
+    padding-top:22px;
+    letter-spacing: 2px;
+  }
+  &_img{
+    height: 44px;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    opacity:.75;
+    background-position: center;
+    font-weight: 500;
+    margin: 0 auto;
+    margin-bottom: 0px;
+    background-size: contain;
+    transition: ease opacity 400ms;
+    background-repeat: no-repeat;
+  }
+  &_wrapper{
+    border-right: solid 1px #efefef;
+    margin-top:22px;
+    cursor: pointer;
+    padding-top:50px;
+    transition: ease margin 400ms;
+    &:last-child{border-right: none;}
+    &:hover .brand_img{opacity: 1;}
+    &:hover .tooltip {opacity: 1;z-index: 1}
+    &:hover {margin-top:0px;}
+    position: relative;
+    display: inline-block;
+    & .tooltip  {
+    width: 140px;
+    color: #423f3f;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-align: center;
+    transition: ease opacity 1s;
+    top:170px;
+    left:0;
+right:0;
+margin-left:auto;
+margin-right:auto;
+    position: absolute;
+    z-index: -21;
+    }
+  }
+}
+#services{
+/*  background: url("../../assets/blob1.svg");
+  background-position: 10% 68%;
+  background-repeat: no-repeat;
+  background-size: 55vw;*/
+}
+ .alt {padding-left: 64px; padding-right: 0px;}
+#service_img{background: url("../../assets/bop.jpg");}
+#analytics_img{  background: url("../../assets/analyticsrl.jpg");}
+#automation_img{  background: url("../../assets/automation.jpg");}
+@media only screen and (max-width: 900px) {
+  .service_container{
+    width: 100%;
+  }
+  .service_desc,.service_expanded{padding-top:16px;}
+  .service_expanded_alt{      flex-direction: column-reverse;
+}
+  .alt{padding-left: 0px;}
+  .service_expanded{text-align: center;align-items: center;}
+  #services{padding:14px;}
+}

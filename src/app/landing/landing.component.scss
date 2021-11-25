@@ -1,0 +1,56 @@
+#landing{
+  height: 100vh;
+  width: 100%;
+  z-index: 4;
+  display: table;
+  position: relative;
+  background-color: #f6f6f6;
+}
+.centered_wrapper{
+  display: table-cell;
+  vertical-align: middle;
+  margin: 0 auto;
+}
+
+.job_title{
+  padding-top: 24px;
+  letter-spacing: 3px;
+}
+#small_intro,#large_intro{
+  text-align: center;
+  font-weight: 300;
+}
+
+
+#large_intro{
+  font-size: 3em;
+  letter-spacing: 2px;
+}
+
+#particles-js{
+  position: absolute;
+  left: 0px;
+  top:0px;
+  z-index: 99;
+  height: 100%;
+  width:100%;
+}
+
+#small_intro{
+  letter-spacing: 1px;
+}
+
+.cd-words-wrapper > b > span{
+  display: none;
+}
+@media only screen and (max-width: 900px) {
+  .centered_wrapper > *{
+    padding: 8px 0px 8px 0px;
+  }
+  #large_intro{
+    font-size:1.6em;
+  }
+  .cd-words-wrapper > b > span{
+    display: block;
+  }
+}
