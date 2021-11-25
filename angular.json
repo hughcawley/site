@@ -31,20 +31,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss",
-              "src/assets/anistyle.scss",
-              "src/assets/_layout.scss",
-              "src/assets/_mixins.scss",
-              "src/assets/_variables.scss",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css"
-
+              "src/styles.scss"
             ],
-            "scripts": [
-              "../node_modules/jquery/dist/jquery.min.js",
-              "src/assets/main.js",
-              "src/assets/tester.js",
-              "node_modules/particles.js/particles.js",
-              "src/assets/modernizr.js"]
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -89,21 +78,7 @@
               "browserTarget": "site:build:development"
             }
           },
-          "styles": [
-            "src/styles.scss",
-            "src/assets/anistyle.scss",
-            "src/assets/_layout.scss",
-            "src/assets/_mixins.scss",
-            "src/assets/_variables.scss",
-            "node_modules/bootstrap/dist/css/bootstrap.min.css"
-
-          ],
-          "scripts": [
-            "../node_modules/jquery/dist/jquery.min.js",
-            "src/assets/main.js",
-            "src/assets/tester.js",
-            "node_modules/particles.js/particles.js",
-            "src/assets/modernizr.js"]
+          "defaultConfiguration": "development"
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
@@ -124,20 +99,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss",
-              "src/assets/anistyle.scss",
-              "src/assets/_layout.scss",
-              "src/assets/_mixins.scss",
-              "src/assets/_variables.scss",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+              "src/styles.scss"
             ],
-            "scripts": [
-              "../node_modules/jquery/dist/jquery.min.js",
-              "src/assets/main.js",
-              "src/assets/tester.js",
-              "node_modules/particles.js/particles.js",
-              "src/assets/modernizr.js"
-            ]
+            "scripts": []
           }
         }
       }
