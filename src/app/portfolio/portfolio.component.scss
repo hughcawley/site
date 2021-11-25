@@ -47,8 +47,11 @@
     border-radius: 8px;
     cursor: pointer;
     padding-left: 0px;
+    display:flex;
+    flex-direction:column;
     padding-right: 0px;
-    margin-top: 72px;
+    background-color: #efefef;
+    margin-top: 12px;
     border: solid #eeeeee 1px;
     transition: ease margin 400ms;
     &:hover {margin-top:54px;}
@@ -69,6 +72,7 @@
     padding-left: 15px;
     padding-top:42px;
     padding-right: 15px;
+    flex-grow:1;
     background-color: white;
     padding-bottom: 32px;
     position: relative;
@@ -79,15 +83,16 @@
     background-position: 0px -20px, bottom;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
-    background-color: #efefef;
     background-size: 105%, contain;
-    height: 100px;
+    height: 12px;
     width: 100%;
   }
   &_logo{
     height: 120px;
     max-width: 130px;
     width: 80%;
+    padding-top:12px;
+    padding-bottom: 12px;
     margin: 0 auto;
     background-repeat: no-repeat;
     background-size: contain;
@@ -262,6 +267,4 @@ background-size: contain;
   margin-bottom:6px;
 }
 }
-#TroidMMA{
-  background-color:#1f2c47;
-}
+#TroidMMA {background-color: #2a2a2a;}

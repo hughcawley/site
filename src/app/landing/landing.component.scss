@@ -40,8 +40,14 @@
   letter-spacing: 1px;
 }
 
-.cd-words-wrapper > b > span{
-  display: none;
+.cd-words-wrapper > b{
+//display: none;
+}
+.cd-words-wrapper{
+  color:white;
+  -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+-webkit-text-stroke-width: .6px;
+-webkit-text-stroke-color: #808080;
 }
 @media only screen and (max-width: 900px) {
   .centered_wrapper > *{
@@ -50,7 +56,11 @@
   #large_intro{
     font-size:1.6em;
   }
-  .cd-words-wrapper > b > span{
+  .cd-words-wrapper{
     display: block;
+    color:white;
+    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+ -webkit-text-stroke-width: 1px;
+ -webkit-text-stroke-color: #2a2a2a;
   }
 }
