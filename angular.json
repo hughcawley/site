@@ -31,9 +31,16 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
-            ],
-            "scripts": []
+              "src/styles.scss",
+              "src/assets/anistyle.scss",
+              "src/assets/_layout.scss",
+              "src/assets/_mixins.scss",
+              "src/assets/_variables.scss"
+                        ],
+            "scripts": [
+              "src/assets/main.js",
+            "src/assets/modernizr.js"
+          ]
           },
           "configurations": {
             "production": {
@@ -99,9 +106,16 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
-            ],
-            "scripts": []
+              "src/styles.scss",
+              "src/assets/anistyle.scss",
+              "src/assets/_layout.scss",
+              "src/assets/_mixins.scss",
+              "src/assets/_variables.scss"
+                        ],
+            "scripts": [
+              "src/assets/main.js",
+              "src/assets/modernizr.js"
+          ]
           }
         }
       }
