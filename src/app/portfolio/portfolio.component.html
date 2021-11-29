@@ -56,7 +56,7 @@
     </div>
   </div>
   <div class="lp_expanded" *ngIf="this.expanded!=null">
-    <div class="lp_expanded_close" (click)="toggleDisplay('close')">x</div>
+    <div class="lp_expanded_close" (click)="toggleDisplay(null)">x</div>
     <h4>{{testtools}}</h4>
     <h4>{{expanded.title}}</h4>
     <p>{{expanded.desc}}</p>

@@ -34,12 +34,12 @@ export class PortfolioComponent implements OnInit {
   ngOnInit() {
   }
   @HostListener('mouseover', ['$event.target']) onMouseOver(e){
-    if(e.class="lp_wrapper"){console.log(e);}
   //if( top < 900){console.log(top);console.log(this.myDiv);}
 }
   toggleDisplay(expanded){
+    console.log(expanded);
     if(this.expanded == expanded)
-      this.expanded= null;
+      this.expanded = null;
     else
       this.expanded = expanded;
   }

@@ -7,7 +7,7 @@
     width: 100vw;
     background-color: white;
     padding: 140px;
-    opacity: .92;
+    opacity: .94;
     top:0px;
     left:0px;
     display: block;
@@ -54,7 +54,7 @@
     margin-top: 12px;
     border: solid #eeeeee 1px;
     transition: ease margin 400ms;
-    &:hover {margin-top:54px;}
+    &:hover {margin-top:32px;}
     & span{
       font-size: 12px;
       opacity: .45;
@@ -94,6 +94,8 @@
     padding-top:12px;
     padding-bottom: 12px;
     margin: 0 auto;
+    margin-top:22px;
+    margin-bottom:22px;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center center;
