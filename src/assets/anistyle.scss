@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import '~bourbon/app/assets/stylesheets/_bourbon';
 @import './variables'; // colors, fonts etc...
 @import './mixins'; // custom mixins
 @import './layout'; // responsive grid and media queries
@@ -10,7 +11,7 @@ Primary style
 -------------------------------- */
 
 *, *::after, *::before {
-// @include box-sizing(border-box);
+ //@include box-sizing(border-box);
 }
 i{font-style: normal;}
 a {

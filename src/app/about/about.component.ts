@@ -24,7 +24,6 @@ export class AboutComponent implements OnInit {
 
  @HostListener('window:scroll', ['$event']) scroll(e:any){
    this.top = this.section.nativeElement.offsetTop;
-   console.log(window.scrollY);
    if((window.scrollY+ 350) > this.top){this.leaveEnter = true;}
   }
   ngOnInit() {

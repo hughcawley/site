@@ -1,4 +1,4 @@
-jQuery(document).ready(function($){
+$(document).ready(function($){
 	//set animation timing
 	var animationDelay = 1200,
 		//loading bar effect

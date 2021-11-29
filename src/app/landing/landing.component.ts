@@ -4,6 +4,7 @@ import{trigger, state, transition, style, animate, query, stagger} from '@angula
 import $ from "jquery";
 
 
+
 declare var particlesJS: any;
 
 @Component({

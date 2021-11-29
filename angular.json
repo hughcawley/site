@@ -32,12 +32,10 @@
             ],
             "styles": [
               "src/styles.scss",
-              "src/assets/anistyle.scss",
-              "src/assets/_layout.scss",
-              "src/assets/_mixins.scss",
-              "src/assets/_variables.scss"
+              "src/assets/anistyle.scss"
                         ],
             "scripts": [
+              "./node_modules/jquery/dist/jquery.min.js",
               "src/assets/main.js",
             "src/assets/modernizr.js"
           ]
@@ -107,12 +105,10 @@
             ],
             "styles": [
               "src/styles.scss",
-              "src/assets/anistyle.scss",
-              "src/assets/_layout.scss",
-              "src/assets/_mixins.scss",
-              "src/assets/_variables.scss"
-                        ],
+              "src/assets/anistyle.scss"
+            ],
             "scripts": [
+              "./node_modules/jquery/dist/jquery.min.js",
               "src/assets/main.js",
               "src/assets/modernizr.js"
           ]
