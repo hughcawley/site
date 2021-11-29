@@ -36,6 +36,7 @@
                         ],
             "scripts": [
               "./node_modules/jquery/dist/jquery.min.js",
+              "node_modules/particles.js/particles.js",
               "src/assets/main.js",
             "src/assets/modernizr.js"
           ]
@@ -109,6 +110,7 @@
             ],
             "scripts": [
               "./node_modules/jquery/dist/jquery.min.js",
+              "node_modules/particles.js/particles.js",
               "src/assets/main.js",
               "src/assets/modernizr.js"
           ]
