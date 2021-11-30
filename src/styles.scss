@@ -101,7 +101,7 @@ Primary style
 html * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  cursor: url("./assets/cursor.png") 9 9, auto!important;
+  cursor: url("./assets/cursor.png"), auto!important;
 }
 
 html {
