@@ -2,6 +2,7 @@ var express = require("express");
 var cors = require("cors");
 var bodyParser = require("body-parser");
 var nodemailer = require("nodemailer");
+const path = require('path');
 
 // create a new Express application instance
 var app = express();
@@ -10,13 +11,14 @@ var app = express();
 app.use(bodyParser.json());
 app.use(cors());
 //start application server on port 3000
-var port = process.env.PORT || 3000;
-var server = app.listen(port, function(){
-      console.log('Listening on port ' + port);
-    });
+//var port = process.env.PORT || 3000;
+
 
 // define a sendmail endpoint, which will send emails and response with the corresponding status
-
+app.use(express.static(__dirname + '/dist/<app-name>'));
+app.get('/*', function(req,res) {
+res.sendFile(path.join(__dirname+'/dist/<app-name>/index.html'));});
+app.listen(process.env.PORT || 8080);
 
   var transporter = nodemailer.createTransport({
    service: 'gmail',
