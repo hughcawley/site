@@ -15,9 +15,9 @@ app.use(cors());
 
 
 // define a sendmail endpoint, which will send emails and response with the corresponding status
-app.use(express.static(__dirname + '/dist/<app-name>'));
+app.use(express.static(__dirname + '/dist/site'));
 app.get('/*', function(req,res) {
-res.sendFile(path.join(__dirname+'/dist/<app-name>/index.html'));});
+res.sendFile(path.join(__dirname+'/dist/site/index.html'));});
 app.listen(process.env.PORT || 8080);
 
   var transporter = nodemailer.createTransport({
