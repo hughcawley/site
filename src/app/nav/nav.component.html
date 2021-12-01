@@ -25,10 +25,10 @@
     </div>
   </div>
   <span class="right_nav">
-    <a href="#about" class="nav_links">About Me</a>
-    <a href="#services" class="nav_links">Services</a>
-    <a href="#portfolio" class="nav_links">My Work</a>
-    <a href="#footer" class="nav_links">Get In Touch</a>
+    <a href="#about" class="nav_links" (click)="toggleMenu()">>About Me</a>
+    <a href="#services" class="nav_links" (click)="toggleMenu()">>Services</a>
+    <a href="#portfolio" class="nav_links" (click)="toggleMenu()">>My Work</a>
+    <a href="#footer" class="nav_links" (click)="toggleMenu()">>Get In Touch</a>
   </span>
   <div class="menu" (click)="toggleMenu()"></div>
 </nav>
