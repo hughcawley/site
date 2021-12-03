@@ -21,7 +21,7 @@ export class ServicesComponent implements OnInit {
   services = [
 {"title": "Website Design & Development", "img" : "laptop-phone.svg", "tagline" : "Reach more customers & drive your business with a template driven or bespoke website" , "description" : "Build your online presence with a professionally designed & developed website that your customers can engage with. Customise your customer's online experience with bespoke web applications."},
 {"title": "Automation Technician", "img" : "timer.svg","tagline" : "Save time & resources by automating your business' processes", "description" : "Remove human error and streamline your business using pre-programmed, custom API's. Allow for multiple software & applications to communicate with one another seemlessly."},
-{"title": "Marketing & Advertising", "img" : "invest-monitor.svg", "tagline" : "Track your online performance, monitor campaigns & expand your market", "description" : "Find the best channel to boost your site's online performance. Build your audience using targeted SEO and advertising campaigns"},
+{"title": "Marketing & Advertising", "img" : "invest-monitor.svg", "tagline" : "Track your online performance, monitor campaigns & expand your market", "description" : "Find the best channel to boost your site's online performance. Build your audience &amp; conversions using targeted SEO and advertising campaigns"},
 {"title": "Support & Maintenance", "img" : "magnifier.svg", "tagline" : "XYZ", "description" : "Whatever I.T. issues or questions you have, I'm here to help. I regularly tweak campaigns and ensure that on the technoloy side, your business is being taken care of."}
   ];
   Webbrands = [
@@ -55,7 +55,7 @@ Analyticsbrands = [
     {"title": "Google Analytics", "img" : "ga.png", "tag" :"Website Analytics  Proficiency Level: Certified"},
     {"title": "Google Data Studio", "img" : "gds.png", "tag" :"Data Visualisation & Reporting   Proficiency Level: Certified"},
     {"title": "Google Search Console", "img" : "gsc.jpg", "tag" :"SEO Management "},
-    {"title": "Google Lighthouse", "img" : "gsc.jpg", "tag" :"Technical SEO Audit "},
+    {"title": "Google Lighthouse", "img" : "lighthouse.png", "tag" :"Technical SEO Audit "},
     {"title": "Ahrefs", "img" : "ahrefs.jpg", "tag" :"Keyword Reporting Tool "},
     {"title": "Hootsuite", "img" : "hoot.jpg", "tag" :"Social Media Management "}
   ];
