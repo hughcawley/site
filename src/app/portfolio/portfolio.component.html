@@ -42,8 +42,11 @@
           matTooltipHideDelay="100000"
           aria-label="Button that displays a tooltip that hides when scrolled out of the container"
           class="example-button">
-    Action
-  </button>
+  <button mat-raised-button #tooltip="matTooltip"
+      matTooltip="Info about the action"
+      matTooltipHideDelay="100000"
+      aria-label="Button that displays a tooltip that hides when scrolled out of the container"
+      class="example-button">
       <div class="col-lg-3 ml-5 lp_wrapper" *ngFor = "let case of cases;" id="{{case.title}}" (click)="toggleDisplay(case)">
         <div class="lp_header"></div>
         <div class="lp_logo" [style.backgroundImage]="'url(../../assets/'+case.img+')'"></div>
@@ -59,7 +62,7 @@
               <span>{{case.duration}}</span>
           </div>
         </div>
-      </div>
+      </div>  </button>
     </div>
   </div>
   <div class="lp_expanded" *ngIf="this.expanded!=null">
