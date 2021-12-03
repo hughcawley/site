@@ -37,6 +37,14 @@
   <h3 class="heading right" id="portfolio">How I Help My Clients</h3>
   <div class="lp_grid ">
     <div class="lp_container row" >
+      <button mat-raised-button #tooltip="matTooltip"
+          matTooltip="Info about the action"
+          [matTooltipPosition]="position.value"
+          matTooltipHideDelay="100000"
+          aria-label="Button that displays a tooltip that hides when scrolled out of the container"
+          class="example-button">
+    Action
+  </button>
       <div class="col-lg-3 ml-5 lp_wrapper" *ngFor = "let case of cases;" id="{{case.title}}" (click)="toggleDisplay(case)">
         <div class="lp_header"></div>
         <div class="lp_logo" [style.backgroundImage]="'url(../../assets/'+case.img+')'"></div>
