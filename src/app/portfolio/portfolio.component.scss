@@ -88,8 +88,8 @@
     width: 100%;
   }
   &_logo{
-    height: 120px;
-    max-width: 130px;
+    height: 132px;
+    max-width: 125px;
     width: 80%;
     padding-top:12px;
     padding-bottom: 12px;
@@ -271,3 +271,4 @@ background-size: contain;
 }
 #TroidMMA {background-color: #2a2a2a;}
 #Footfall {background-color: #64b140;}
+#Linehans .lp_logo, #dnd .lp_logo{max-width: 100px}
