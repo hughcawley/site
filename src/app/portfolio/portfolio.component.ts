@@ -64,8 +64,3 @@ export class PortfolioComponent implements OnInit {
   }
 
 }
-
-export class TooltipAutoHideExample {
-  positionOptions: TooltipPosition[] = ['below', 'above', 'left', 'right'];
-  position = new FormControl('above');
-}
