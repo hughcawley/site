@@ -78,6 +78,9 @@
       margin-top: 24px;
       letter-spacing: 1px;
     }
+    & h2{
+      padding-bottom: 18px;
+    }
   }
   &_text{
     padding-left: 15px;
@@ -136,6 +139,8 @@ background-size: contain;
     font-weight: 400;
     margin-top:24px;
     cursor: pointer;
+    font-size: 18px;
+    padding:9px;
     background-color: #2a2a2a;
     letter-spacing: 1px;
     &:hover{

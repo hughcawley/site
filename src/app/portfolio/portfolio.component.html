@@ -45,7 +45,7 @@
 
         <!--  <div class="lp_expand_btn"  ></div>-->
 
-        <h4>{{case.title}} | {{case.tagline}}</h4>
+        <h4>{{case.title}} |<span class="tagline"> {{case.tagline}}</span></h4>
           <h5>Overview</h5>
           <span *ngFor = "let skill of case.skills;">{{skill}} | </span>
           <div class="lp_details">
@@ -61,10 +61,10 @@
     <div class="lp_expanded_wrapper">
       <div class="lp_expanded_close" (click)="toggleDisplay(null)">x</div>
     <h4>{{testtools}}</h4>
-    <h4>{{expanded.title}}</h4>
+    <h2>{{expanded.title}}</h2>
     <p>{{expanded.desc}}</p>
     <h3 class="">Tools</h3>
-   <span class="portfolio_tools" *ngFor = "let tool of expanded.tools;">{{tool}}&nbsp;</span>
+   <span class="portfolio_tools" *ngFor = "let tool of expanded.tools;">{{tool}},&nbsp;</span>
       <a href="{{expanded.anchor}}" target="_blank" *ngIf="expanded.anchor"><div class="portfolio_link">Visit Website</div></a>
 </div>
     </div>
