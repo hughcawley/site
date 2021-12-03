@@ -82,7 +82,7 @@
     </div>
     <div class="brand col-12 row">
       <div class="col-2 brand_wrapper" *ngFor="let brand of Analyticsbrands;">
-        <div class="brand_img" id="brand_img">></div>
+        <div class="brand_img" [style.backgroundImage]="'url(../../assets/ServiceBrandImgs/'+brand.img+')'"></div>
         <p class="center brand_title">{{brand.title}}</p>
         <span class="tooltip">{{brand.tag}}</span>
       </div>
