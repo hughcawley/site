@@ -52,7 +52,7 @@
               <h5>Duration</h5>
               <span>{{case.duration}}</span>
           </div>
-        </div>  
+        </div>
 
       </div>
     </div>
@@ -65,7 +65,7 @@
     <p>{{expanded.desc}}</p>
     <h3 class="">Tools</h3>
    <span class="portfolio_tools" *ngFor = "let tool of expanded.tools;">{{tool}}&nbsp;</span>
-      <a href="{{expanded.anchor}}" *ngIf="expanded.anchor"><div class="portfolio_link">Visit Website</div></a>
+      <a href="{{expanded.anchor}}" target="_blank" *ngIf="expanded.anchor"><div class="portfolio_link">Visit Website</div></a>
 </div>
     </div>
 </section>
