@@ -22,7 +22,6 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatSnackBarModule} from '@angular/material/snack-bar'
 import {MatTabsModule} from '@angular/material/tabs';
 import { OverlayModule } from '@angular/cdk/overlay';
-import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatButtonModule} from '@angular/material/button';
 import { QualificationsComponent } from './qualifications/qualifications.component';
@@ -48,6 +47,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     HttpClientModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
+    MatTooltipModule,
     MatTabsModule,
     MatSidenavModule,
     MatSnackBarModule,
