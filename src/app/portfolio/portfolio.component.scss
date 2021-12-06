@@ -294,4 +294,7 @@ background-size: contain;
 #linehans .lp_logo, #dnd .lp_logo{max-width: 100px}
 @media only screen and (max-width: 900px) {
   .lp_expanded{padding:22px;}
+  .portfolio_tools{
+    display:inline-block;
+  }
 }

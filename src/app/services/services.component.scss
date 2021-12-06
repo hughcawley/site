@@ -143,8 +143,10 @@ margin-right:auto;
   .service_desc,.service_expanded{padding-top:16px;}
   .service_expanded_alt{      flex-direction: column-reverse;
 }
-.service_desc{ padding-right:0px;}
+.service_desc{ padding-right:0px;padding-left:0px;}
   .alt{padding-left: 0px;}
   .service_expanded{text-align: center;align-items: center;}
   #services{padding:14px;}
+  .brand_wrapper{padding-top:12px}
+  .brand_title{font-size: 1rem; font-weight: 500;}
 }
