@@ -1,5 +1,5 @@
 #landing{
-  height: 100vh;
+  height: 90vh;
   width: 100%;
   z-index: 4;
   display: table;
@@ -10,6 +10,10 @@
   display: table-cell;
   vertical-align: middle;
   margin: 0 auto;
+  & > *{
+    margin: 0px;
+  }
+  & h1{padding-top:0px;}
 }
 
 .job_title{

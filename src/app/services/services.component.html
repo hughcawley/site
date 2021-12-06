@@ -32,7 +32,7 @@
     </div>
     <div class="mobile_img col-lg-6 col-12  align-middle service_image" id="service_img"  ></div>
     <div class="brand col-12 row">
-      <div class="col-2 brand_wrapper" *ngFor="let brand of Webbrands;" >
+      <div class="col-lg-2 col-sm-4 brand_wrapper" *ngFor="let brand of Webbrands;" >
         <div class="brand_img" [style.backgroundImage]="'url(../../assets/ServiceBrandImgs/'+brand.img+')'"></div>
         <p class="center brand_title">{{brand.title}}</p>
         <span class="tooltip">{{brand.tag}}</span>

@@ -292,3 +292,6 @@ background-size: contain;
 #footfall {background-color: #64b140;}
 #studio {background-color: #f1fde9;}
 #linehans .lp_logo, #dnd .lp_logo{max-width: 100px}
+@media only screen and (max-width: 900px) {
+  .lp_expanded{padding:22px;}
+}
