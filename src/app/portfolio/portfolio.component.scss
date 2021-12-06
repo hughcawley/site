@@ -15,8 +15,8 @@
     align-items: center;
     z-index: 99;
     &_close{
-      height: 20px;
-      width: 20px;
+      height: 30px;
+      width: 30px;
       display: block;
       position: absolute;
       top:22px;
@@ -288,7 +288,7 @@ background-size: contain;
 }
 .skills_name span:after{content:" | ";}
 .skills_name span:last-child:after{display:none}
-#TroidMMA {background-color: #2a2a2a;}
-#Footfall {background-color: #64b140;}
+#troidmma {background-color: #2a2a2a;}
+#footfall {background-color: #64b140;}
 #studio {background-color: #f1fde9;}
-#Linehans .lp_logo, #dnd .lp_logo{max-width: 100px}
+#linehans .lp_logo, #dnd .lp_logo{max-width: 100px}
