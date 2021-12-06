@@ -47,7 +47,7 @@
 
         <h4>{{case.title}} |<span class="tagline"> {{case.tagline}}</span></h4>
           <h5>Overview</h5>
-          <span class="skills_name" *ngFor = "let skill of case.skills;">{{skill}}</span>
+          <div class="skills_name" ><span *ngFor = "let skill of case.skills;">{{skill}}</span></div>
           <div class="lp_details">
               <h5>Duration</h5>
               <span>{{case.duration}}</span>
