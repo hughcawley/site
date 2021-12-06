@@ -41,7 +41,7 @@ app.post("/sendmail", (req, res) => {
   var mail = req.body;
   console.log(mail);
   var mailOptions = {
-    from: 'Hugh, "hughcawley@gmail.com"',
+    from: 'Hugh, "jigsawpzzl@gmail.com"',
     to: 'hughcawley@gmail.com',
     subject: "New Website Message" ,
     html: "<h1 font-size: 80px;>"+mail.message+"</h1><h2>"+mail.name+"</h2><h2>"+mail.email+"</h2>"

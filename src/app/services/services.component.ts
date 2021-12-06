@@ -56,7 +56,7 @@ Analyticsbrands = [
     {"title": "Google Data Studio", "img" : "gds.png", "tag" :"Data Visualisation & Reporting   Proficiency Level: Certified"},
     {"title": "Google Search Console", "img" : "gsc.jpg", "tag" :"SEO Management "},
     {"title": "Google Lighthouse", "img" : "lighthouse.png", "tag" :"Technical SEO Audit "},
-    {"title": "Ahrefs", "img" : "ahrefs.jpg", "tag" :"Keyword Reporting Tool "},
+    {"title": "Ahrefs", "img" : "ahrefs.jpg", "tag" :"SEO Reporting Tool "},
     {"title": "Hootsuite", "img" : "hoot.jpg", "tag" :"Social Media Management "}
   ];
   leaveEnter = false;
