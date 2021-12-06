@@ -18,4 +18,5 @@ p{
 }
 @media only screen and (max-width: 900px) {
   p{width:100%;}
+  #about{flex-direction:column-reverse;}
 }
