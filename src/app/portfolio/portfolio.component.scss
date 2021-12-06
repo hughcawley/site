@@ -286,8 +286,9 @@ background-size: contain;
   margin-bottom:6px;
 }
 }
-.skills_name::after{content: "|";display: inline-block;padding-left: 4px; padding-right: 4px;}
-.skills_name:last-child:after{display: none;}
+.skills_name span:after{content:" | ";}
+.skills_name span:last-child:after{display:none}
 #TroidMMA {background-color: #2a2a2a;}
 #Footfall {background-color: #64b140;}
+#studio {background-color: #f1fde9;}
 #Linehans .lp_logo, #dnd .lp_logo{max-width: 100px}
