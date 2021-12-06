@@ -23,6 +23,7 @@ export class ServicesComponent implements OnInit {
 {"title": "Automation Technician", "img" : "timer.svg","tagline" : "Save time & resources by automating your business' processes", "description" : "Remove human error and streamline your business using pre-programmed, custom API's. Allow for multiple software & applications to communicate with one another seemlessly."},
 {"title": "Marketing & Advertising", "img" : "invest-monitor.svg", "tagline" : "Track your online performance, monitor campaigns & expand your market", "description" : "Find the best channel to boost your site's online performance. Build your audience &amp; conversions using targeted SEO and advertising campaigns"},
 {"title": "Support & Maintenance", "img" : "magnifier.svg", "tagline" : "XYZ", "description" : "Whatever I.T. issues or questions you have, I'm here to help. I regularly tweak campaigns and ensure that on the technoloy side, your business is being taken care of."}
+{"title": "Graphic & Logo Design", "img" : "magnifier.svg", "tagline" : "XYZ", "description" : "Whatever I.T. issues or questions you have, I'm here to help. I regularly tweak campaigns and ensure that on the technoloy side, your business is being taken care of."}
   ];
   Webbrands = [
     {"title": "Shopify", "img" : "shopify.png", "tag" :"E-commerce CMS "},
