@@ -80,7 +80,7 @@ this.top = this.section.nativeElement.offsetTop;
 }
 toggleDisplay(expanded){
   expanded = "#"+expanded;
-  $(expanded).css("display","block");
+  $(expanded).css("display","block!important;");
 }
   ngOnInit() {
 console.log(this.top);
