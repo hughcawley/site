@@ -32,7 +32,8 @@
     </div>
     <div class="mobile_img col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 order-first align-middle service_image" id="service_img"  ></div>
     <div class="brand col-12 row order-last">
-      <div class="col-4 col-lg-2 brand_wrapper" *ngFor="let brand of Webbrands;" >
+      <button class="visible-xs" data-toggle="collapse" data-target="#web_brands">View Tools Used</button>
+      <div class="col-4 col-lg-2 brand_wrapper hidden-xs" id="web_brands" *ngFor="let brand of Webbrands;" >
         <div class="brand_img" [style.backgroundImage]="'url(../../assets/ServiceBrandImgs/'+brand.img+')'"></div>
         <p class="center brand_title">{{brand.title}}</p>
         <span class="tooltip">{{brand.tag}}</span>
@@ -48,7 +49,8 @@
         Stock Ordering & Managment, Invoicing, Employee Planner, Delivery Planner. Get in touch today to find out how you can streamline your business. </p>
     </div>
     <div class="brand col-12 row order-last">
-      <div class="col-4 col-lg-2 brand_wrapper" *ngFor="let brand of Automationbrands;">
+      <button class="visible-xs" data-toggle="collapse" data-target="#auto_brands">View Tools Used</button>
+      <div class="col-4 col-lg-2 brand_wrapper hidden-xs" id="auto_brands" *ngFor="let brand of Automationbrands;">
         <div class="brand_img" [style.backgroundImage]="'url(../../assets/ServiceBrandImgs/'+brand.img+')'"></div>
         <p class="center brand_title">{{brand.title}}</p>
         <span class="tooltip">{{brand.tag}}</span>
@@ -65,7 +67,8 @@
     </div>
     <div class="mobile_img col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 order-first align-middle service_image" id="analytics_img"></div>
     <div class="brand col-12 row order-last">
-      <div class="col-4 col-lg-2 brand_wrapper " *ngFor="let brand of Markbrands; let lastItem = last;">
+      <button class="visible-xs" data-toggle="collapse" data-target="#mark_brands">View Tools Used</button>
+      <div class="col-4 col-lg-2 brand_wrapper hidden-xs " id="mark_brands" *ngFor="let brand of Markbrands; let lastItem = last;">
         <div class="brand_img" [style.backgroundImage]="'url(../../assets/ServiceBrandImgs/'+brand.img+')'"></div>
         <p class="center brand_title">{{brand.title}}</p>
         <span class="tooltip">{{brand.tag}}</span>
@@ -81,7 +84,8 @@
         as: Stock Ordering & Managment, Invoicing, Employee Planner, Delivery Planner. Get in touch today to find out how you can streamline your business. </p>
     </div>
     <div class="brand col-12 row order-last">
-      <div class="col-4 col-lg-2 brand_wrapper" *ngFor="let brand of Analyticsbrands;">
+      <button class="visible-xs" data-toggle="collapse" data-target="#analytics_brands">View Tools Used</button>
+      <div class="col-4 col-lg-2 brand_wrapper hidden-xs" id="analytics_brands" *ngFor="let brand of Analyticsbrands;">
         <div class="brand_img" [style.backgroundImage]="'url(../../assets/ServiceBrandImgs/'+brand.img+')'"></div>
         <p class="center brand_title">{{brand.title}}</p>
         <span class="tooltip">{{brand.tag}}</span>
