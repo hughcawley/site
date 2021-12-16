@@ -37,7 +37,6 @@
             "scripts": [
               "./node_modules/jquery/dist/jquery.min.js",
               "node_modules/particles.js/particles.js",
-              "https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js",
               "src/assets/main.js",
             "src/assets/modernizr.js"
           ]
@@ -112,7 +111,6 @@
             "scripts": [
               "./node_modules/jquery/dist/jquery.min.js",
               "node_modules/particles.js/particles.js",
-              "https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js",
               "src/assets/main.js",
               "src/assets/modernizr.js"
           ]

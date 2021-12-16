@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewChild, ElementRef,HostListener} from '@angular/core';
 import { transition, trigger, useAnimation, state, style, animate } from '@angular/animations';
 import { transAnimation } from '../animations';
+import $ from "jquery";
 
 @Component({
   selector: 'app-services',
@@ -62,6 +63,7 @@ Analyticsbrands = [
   ];
   leaveEnter = false;
   expanded;
+  displayExpanded : CaseObject;
   constructor() { }
 
    toggle(expand) {
@@ -76,6 +78,10 @@ this.top = this.section.nativeElement.offsetTop;
 //this.top = this.section.nativeElement.offsetTop + this.myDiv.nativeElement.offsetTop
   if((window.scrollY + 350) > this.top){this.leaveEnter = true;}
   //if( top < 900){console.log(top);console.log(this.myDiv);}
+}
+toggleDisplay(expanded){
+  expanded = "#"+expanded;
+  $(expanded).css("display","block");
 }
   ngOnInit() {
 console.log(this.top);
