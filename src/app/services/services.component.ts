@@ -63,7 +63,6 @@ Analyticsbrands = [
   ];
   leaveEnter = false;
   expanded;
-  displayExpanded : CaseObject;
   constructor() { }
 
    toggle(expand) {
