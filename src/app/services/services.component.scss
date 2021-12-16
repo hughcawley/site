@@ -145,7 +145,7 @@ margin-right:auto;
 //  .service_expanded_alt{      flex-direction: column-reverse;}
 .service_desc{ padding-right:0px;padding-left:0px;padding-bottom:12px;}
   .alt{padding-left: 0px;}
-  .service_expanded{text-align: center;align-items: center;}
+  .service_expanded{text-align: center;align-items: center; flex-direction:row-reverse;}
   #services{padding:14px;}
   .brand{padding-top:12px;}
   .brand_wrapper{padding-top:12px; padding-left:8px; padding-right: 8px;}
