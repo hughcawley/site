@@ -145,13 +145,13 @@ margin-right:auto;
   .service_expanded_alt{margin:0px;}
 //  .service_expanded_alt{      flex-direction: column-reverse;}
 .service_desc{ padding:24px;}
+.alt{padding-left: 0px;}
 .service_desc h3{padding-top:32px;}
 .service_expanded , .service_expanded_alt{margin-left:0px; padding-top:0px; padding-right:0px;padding-left:0px;text-align: center;align-items: center; }
-  .alt{padding-left: 0px;}
   .service_expanded{flex-direction:row-reverse;}
   #services{padding:0px;}
   .brand{padding-top:12px;overflow-x: scroll; overflow-y: hidden; min-height:190px; display: block;  white-space: nowrap;}
-  .brand:after{content: ">"; display: block;}
+  .brand:after{content: "scroll for more"; display: block;}
   .brand_wrapper{padding-top:12px; padding-left:8px; padding-right: 8px;float: none;}
   .brand_title{font-size: 1rem; font-weight: 500;white-space: break-spaces;}
 }

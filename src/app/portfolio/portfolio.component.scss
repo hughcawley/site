@@ -294,7 +294,11 @@ background-size: contain;
 #studio {background-color: #f1fde9;}
 #linehans .lp_logo, #dnd .lp_logo{max-width: 100px}
 @media only screen and (max-width: 900px) {
-  #expander_btn{margin-top:32px;}
+  #expander_btn{    margin-top: 32px;
+    padding: 8px 32px;
+    background-color: #2a2a2a;
+    color: white;
+    font-size: 1.2rem;}
   .lp_expanded{padding:22px;}
   .lp_wrapper{display:none;}
   .lp_wrapper:nth-child(-n+3){display:inline-block;}
