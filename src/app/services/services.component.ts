@@ -79,6 +79,7 @@ this.top = this.section.nativeElement.offsetTop;
   //if( top < 900){console.log(top);console.log(this.myDiv);}
 }
 toggleDisplay(display){
+  console.log(display);
   display = "#"+display;
   $(display).css("display","block!important;");
 }
