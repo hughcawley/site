@@ -3,6 +3,7 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import { CaseObject } from '../../assets/case';
 import {TooltipPosition} from '@angular/material/tooltip';
+import $ from "jquery";
 
 @Component({
   selector: 'app-portfolio',
