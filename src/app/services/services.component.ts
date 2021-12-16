@@ -78,9 +78,9 @@ this.top = this.section.nativeElement.offsetTop;
   if((window.scrollY + 350) > this.top){this.leaveEnter = true;}
   //if( top < 900){console.log(top);console.log(this.myDiv);}
 }
-toggleDisplay(expanded){
-  expanded = "#"+expanded;
-  $(expanded).css("display","block!important;");
+toggleDisplay(display){
+  display = "#"+display;
+  $(display).css("display","block!important;");
 }
   ngOnInit() {
 console.log(this.top);
