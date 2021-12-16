@@ -143,13 +143,12 @@ margin-right:auto;
     width: 100%;
   }
   .service_expanded_alt{margin:0px;}
-  .service_desc,.service_expanded{padding-top:16px;}
 //  .service_expanded_alt{      flex-direction: column-reverse;}
-.service_desc{ padding-right:0px;padding-left:0px;padding-bottom:12px;}
-.service_desc h3{padding:24px;}
-.service_expanded ,.service_expanded_alt{padding-top:0px; padding-right:0px;}
+.service_desc{ padding:24px;}
+.service_desc h3{padding-top:32px;}
+.service_expanded , .service_expanded_alt{margin-left:0px; padding-top:0px; padding-right:0px;padding-left:0px;text-align: center;align-items: center; }
   .alt{padding-left: 0px;}
-  .service_expanded{text-align: center;align-items: center; flex-direction:row-reverse;}
+  .service_expanded{flex-direction:row-reverse;}
   #services{padding:0px;}
   .brand{padding-top:12px;overflow-x: scroll; overflow-y: hidden; min-height:190px; display: block;  white-space: nowrap;
 }
