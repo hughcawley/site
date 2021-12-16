@@ -63,7 +63,7 @@ export class PortfolioComponent implements OnInit {
       this.expanded = expanded;
   }
   toggleAcc(){
-    console.log();
     $(".lp_wrapper").toggleClass("mob_show");
+    $("#expander_btn").css("display","none");
   }
 }
