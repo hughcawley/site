@@ -7,7 +7,6 @@ import $ from "jquery";
   selector: 'app-services',
   animations: [
 trigger('leaveEnter', [
-    useAnimation(fadeIn),
   state('false', style({ opacity: '0' })),
   state('true', style({ opacity: '1' })),
 transition('false <=> true', animate(1400))
