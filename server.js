@@ -23,8 +23,8 @@ app.listen(process.env.PORT || 8080);
   var transporter = nodemailer.createTransport({
    service: 'gmail',
    auth: {
-          user: 'jigsawpzzl@gmail.com',
-          pass: 'Magenta1994'
+          user: 'hughwebsitemail@gmail.com',
+          pass: 'gakFyn-veqfav-tejdy9'
       }
   });
 /*
