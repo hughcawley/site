@@ -5,7 +5,7 @@ import {HttpClient} from '@angular/common/http';
 export class MailService {
 
   constructor(private http: HttpClient) {}
-  uri="http://localhost:3000/sendmail";
+  uri="https://localhost:3000/sendmail";
   sendMessage(body) {
     this.http.post(this.uri, body)
         .subscribe(res => console.log('Email Sent'));
