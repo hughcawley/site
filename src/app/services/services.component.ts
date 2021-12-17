@@ -1,7 +1,6 @@
 import { Component, OnInit, ViewChild, ElementRef,HostListener} from '@angular/core';
 import { transition, trigger, useAnimation, state, style, animate } from '@angular/animations';
 import { transAnimation, fadeIn } from '../animations';
-import $ from "jquery";
 
 @Component({
   selector: 'app-services',
