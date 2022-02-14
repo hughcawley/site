@@ -151,7 +151,7 @@ margin-right:auto;
   .service_expanded{flex-direction:row-reverse;}
   #services{padding:0px;}
   .brand{padding-top:12px;overflow-x: scroll; overflow-y: hidden; min-height:190px; display: block;  white-space: nowrap;}
-  .service_expanded_alt:after, .service_expanded:after{content: "scroll for more >"; display: block;}
+  .service_expanded_alt:after, .service_expanded:after{content: "scroll for more >"; display: block;opacity: .7; width:100%; text-align: center; order: 14;}
   .brand_wrapper{padding-top:12px; padding-left:8px; padding-right: 8px;float: none;}
   .brand_title{font-size: 1rem; font-weight: 500;white-space: break-spaces;}
 }
