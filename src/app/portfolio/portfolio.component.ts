@@ -16,8 +16,8 @@ export class PortfolioComponent implements OnInit {
   expanded : CaseObject;
   testtools : [];
   cases =[
-    /*{"title" : "Azzurri Print", "id": "ap","anchor": "https://print.azzurri.ie", "tagline" : "Customised Clothing Store", "img": "ap.png", "skills": ["Website Design & Development", "Payment Gateway Setup", "Graphic Design", "Web Application Development", "GTM Setup", "Facebook Pixel Setup"] , "desc" : "With Full Circle, my tasks focus around maintaining their online ?? looking for ways to streamline their tech side of things & developing automation systems. I have developed stock ordering, stock management, holiday processing and software and XYZ","duration" : "3+ Months", "tools" : ["Adobe Illustrator", "Google Admin", "Google Script Editor", "Custom API's" ]},
-*/
+    {"title" : "Azzurri Print", "id": "ap","anchor": "https://print.azzurri.ie", "tagline" : "Customised Clothing Store", "img": "ap.png", "skills": ["Website Design & Development", "Payment Gateway Setup", "Graphic Design", "Web Application Development", "GTM Setup", "Facebook Pixel Setup"] , "desc" : "With Full Circle, my tasks focus around maintaining their online ?? looking for ways to streamline their tech side of things & developing automation systems. I have developed stock ordering, stock management, holiday processing and software and XYZ","duration" : "3+ Months", "tools" : ["Adobe Illustrator", "Google Admin", "Google Script Editor", "Custom API's" ]},
+
 
     {"title" : "Podfurniture" ,"id": "pod","tagline" : "Luxury Furniture Store", "anchor" : "https://www.podfurniture.ie" , "img": "Pod.png", "skills": ["Website Design", "Automation Engineer", "Stock Management", "Search Engine Optomization", "Responsive Website Development", "Ecommerce Stock Management", "Maintenance & Support", "Email Design & Marketing", "Google Advertising (Shopping & Adwords)", "Social Media Advertising (Instagram & Facebook)", "Custom Web application Development", "Google Analytics Reports", "Custom Domain Email Setup" ] , "desc" : "Podfurniture was my first experience working with a brand new business. I was in charge of the technological side of the business. I designed and built the website, managed SEO, managed the advertising campaigns. Compared to my work with jellybean I was more hands on with the other side of the businesss and built automation systems to assist in the logging of online sales through our POS system, Lightspeed", "dimg" : "pod1.png" , "mimg" : "pod2.png","duration" : "4+ Years", "tools" : ["Adobe Photoshop","HootSuite", "Facebook & Instagram Advertising", "Facebook & Instagram Shopping", "Google Adwords", "Google Analytics", "Google Search Console", "Content Management Systems", "Woocommerce", "POS Provider", "Adobe Illustrator"]},
 
@@ -58,11 +58,13 @@ export class PortfolioComponent implements OnInit {
   //if( top < 900){console.log(top);console.log(this.myDiv);}
 }
   toggleDisplay(expanded){
+    /*
     console.log(expanded);
     if(this.expanded == expanded)
       this.expanded = null;
     else
-      this.expanded = expanded;
+      this.expanded = expanded;*/
+      window.location.href = expanded.anchor;
   }
   toggleAcc(){
     $(".lp_wrapper").toggleClass("mob_show");
