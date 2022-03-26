@@ -64,7 +64,8 @@ export class PortfolioComponent implements OnInit {
       this.expanded = null;
     else
       this.expanded = expanded;*/
-      window.location.href = expanded.anchor;
+      window.open(expanded.anchor;, '_blank');
+
   }
   toggleAcc(){
     $(".lp_wrapper").toggleClass("mob_show");
